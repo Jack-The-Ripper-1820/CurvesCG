@@ -13,8 +13,8 @@ file(GLOB SHADERS "shaders/*.glsl" "/*.glsl")
 add_executable (${PROJECT_NAME} "CurvesCG.cpp" "CurvesCG.h" ${COMMON_SOURCES} ${SHADERS} )
 file(COPY ${SHADERS} DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/shaders)
 
-set(CMAKE_TOOLCHAIN_FILE "C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake")
-set(CMAKE_PREFIX_PATH "C:/src/vcpkg/installed/x64-windows/share")
+#set(CMAKE_TOOLCHAIN_FILE "C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake")
+#set(CMAKE_PREFIX_PATH "C:/src/vcpkg/installed/x64-windows/share")
 
 #install(FILES ${CMAKE_PREFIX_PATH}/bin/glew32d.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
